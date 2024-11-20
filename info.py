@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID', '21145186'])
-API_HASH = environ['API_HASH', 'daa53f4216112ad22b8a8f6299936a46']
-BOT_TOKEN = environ['BOT_TOKEN', '7296278954:AAGicNTE7KY0NHRTFzGknH2B5YJOwPJtKbs']
+API_ID = int(environ['API_ID', ''])
+API_HASH = environ['API_HASH', '']
+BOT_TOKEN = environ['BOT_TOKEN', '']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -43,8 +43,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 
 # MongoDB information
-SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+srv://TitanXBots:TitanXBots@cluster0.x606y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://TitanXBots:TitanXBots@cluster0.x606y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+SECONDDB_URI = environ.get('SECONDDB_URI', " ")
+DATABASE_URI = environ.get('DATABASE_URI', " ")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
